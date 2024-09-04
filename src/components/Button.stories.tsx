@@ -23,6 +23,20 @@ export const Primary: Story = {
   },
 };
 
+export const PrimarySmall: Story = {
+  args: {
+    ...Primary.args,
+    size: "sm",
+  },
+};
+
+export const PrimaryLarge: Story = {
+  args: {
+    ...Primary.args,
+    size: "lg",
+  },
+};
+
 export const Danger: Story = {
   args: {
     children: "Danger",
