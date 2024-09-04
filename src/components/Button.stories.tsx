@@ -10,14 +10,22 @@ export default meta;
 
 type Story = StoryObj<typeof Button>;
 
-export const HelloButton: Story = {
+export const Default: Story = {
   args: {
-    children: "Hello World",
+    children: "Default",
   },
 };
 
-export const ClickButton: Story = {
+export const Primary: Story = {
   args: {
-    children: "Click",
+    children: "Primary",
+    color: "primary",
+  },
+};
+
+export const Danger: Story = {
+  args: {
+    children: "Danger",
+    color: "danger",
   },
 };
